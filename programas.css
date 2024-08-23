@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat;
+    background-color: white;
+    color: black;
+}
+
+#navegador{
+    background-color: black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 0 0;
+    width: 90%;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+#navegador div a img{
+    height: 70px;
+    max-width: 140px;
+}
+
+#navegador div a{
+
+    color:white;
+    font-weight: 400;
+    font-size: 16px;
+    transition: 0.5;
+    width: 100%;
+}
+
+#navegador div a:hover{
+
+    color:lightgreen;
+
+}
+
+#navegador div div.collapse.navbar-collapse.justify-content-center{
+
+  width: 100%;
+
+} 
+
+#navegador div div.collapse.navbar-collapse.justify-content-center div.navbar-nav{
+
+  gap: 50px;
+
+}
+
+#introduccion{
+
+    padding: 30px;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+
+#introduccion h1{
+
+    font-size: 3rem;
+    margin: 0 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.introduccion--flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#introduccion p{
+
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 350px;
+    margin-bottom: 0;
+
+}
+
+#introduccion img{
+
+    width: 400px;
+    height: 300px;
+
+}
+
+
+#programas{
+
+    padding: 30px;
+    text-align: left;
+    background-color: aliceblue;
+}
+
+
+.programas--flex div{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.programas--especiales{
+
+    margin-top: 40px;
+}
+
+.programas--description h2{
+
+    margin-bottom: 20px;
+}
+
+.programas--description p{
+
+    margin-bottom: 20px;
+    line-height: 30px;
+
+}
+
+.gradient-text {
+    /* Define the gradient */
+    background: linear-gradient(90deg, #2e8b57, #3cb371, #20b2aa); /* Degradado de color */
+
+    /* Apply the gradient to the text */
+    -webkit-background-clip: text; /* Para WebKit */
+    -webkit-text-fill-color: transparent; /* Para WebKit */
+    background-clip: text; /* Para otros navegadores */
+    color: transparent; /* Asegura que el color de texto no interfiera */
+    font-size: 3rem; /* Tamaño de fuente opcional */
+    font-weight: bold; /* Peso de fuente opcional */
+}
+
+.footer-button {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    transition: all 0.3s ease; /* Para una transición suave en los cambios */
+}
+
+.footer-button:hover {
+    border: 2px solid cornflowerblue;
+    color: cornflowerblue;
+}
+
+.footer-button i {
+    color: inherit; /* Para asegurar que el color del ícono cambie junto con el texto */
+}
