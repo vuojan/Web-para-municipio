@@ -54,89 +54,63 @@ body {
 
 }
 
-#introduccion{
+#equipo{
 
-    padding: 30px;
     text-align: left;
-    max-width: 900px;
-    margin: 0 auto;
-
+    padding: 30px 100px;
+    background-color: white;
 }
 
-#introduccion h1{
+#equipo h1{
 
     font-size: 35px;
-    margin: 0 0;
-    margin-bottom: 15px;
-    font-weight: 600;
+    font-weight: 500;
+    color: skyblue;
+    max-width: 800px;
+    margin: 50px auto;
+    margin-top: 30px;
+    text-align: center;
+
 }
 
-.introduccion--flex{
+.equipo--flex{
+
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
-}
-
-#introduccion p{
-
-    font-size: 18px;
-    line-height: 30px;
-    max-width: 350px;
-    margin-bottom: 0;
-
-}
-
-#introduccion img{
-
-    width: 400px;
-    height: 300px;
-
-}
-
-
-#programas{
-
-    padding: 30px;
-    text-align: left;
-    background-color: aliceblue;
-}
-
-
-.programas--flex div{
-    max-width: 700px;
     margin: 0 auto;
+    gap: 100px;
+    align-items: center;
+    border-top: 2px solid skyblue;
+    padding: 50px 0;
+    max-width: 700px;
 }
 
-.programas--especiales{
+.equipo--flex div{
 
-    margin-top: 40px;
+    max-width: 300px;
 }
 
-.programas--description h2{
+.equipo--flex h3{
 
-    margin-bottom: 20px;
-}
-
-.programas--description p{
-
-    margin-bottom: 20px;
-    line-height: 30px;
+    margin-top: 30px;
+    font-size: 20px;
 
 }
 
-.gradient-text {
-    /* Define the gradient */
-    background: linear-gradient(90deg, #2e8b57, #3cb371, #20b2aa); /* Degradado de color */
 
-    /* Apply the gradient to the text */
-    -webkit-background-clip: text; /* Para WebKit */
-    -webkit-text-fill-color: transparent; /* Para WebKit */
-    background-clip: text; /* Para otros navegadores */
-    color: transparent; /* Asegura que el color de texto no interfiera */
-    font-size: 3rem; /* Tamaño de fuente opcional */
-    font-weight: bold; /* Peso de fuente opcional */
+.equipo--flex div p{
+
+    line-height: 35px;
+    margin-top: 30px;
 }
+
+.equipo--flex div img{
+
+    border-radius: 10px;
+
+}
+
 
 .footer-button {
     background-color: black;
