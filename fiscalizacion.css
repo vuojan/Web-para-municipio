@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: roboto;
+    font-family: montserrat;
     background-color: white;
     color: black;
 }
@@ -50,21 +50,33 @@ body {
 
 #navegador div div.collapse.navbar-collapse.justify-content-center div.navbar-nav{
 
-  gap: 50px;
+  gap: 30px;
 
 }
+
+#navegador div.nav-item.dropdown ul.dropdown-menu{
+
+    background-color: black;
+
+} 
+
+#navegador div.nav-item.dropdown ul.dropdown-menu li:hover{
+
+    background-color: black;
+
+} 
+
+#navegador div.nav-item.dropdown ul.dropdown-menu li:hover a{
+
+    background-color: black;
+
+} 
 
 #fisca{
 
     text-align: left;
     background-color: white;
 
-}
-
-#fisca div{
-
-    max-width: 700px;
-    margin: 0 auto;
 }
 
 #fisca h1{
@@ -79,7 +91,14 @@ body {
     margin-top: 10px;
 }
 
-.fisca--div-text{
+.fisca--div-title{
+
+    width: 700px;
+    margin: 0 auto;
+
+}
+
+.fisca--div-content{
 
     background-color: whitesmoke;
     padding: 30px;
@@ -87,12 +106,16 @@ body {
     line-height: 30px;
     border-radius: 10px;
     margin-bottom: 30px !important;
+    width: 900px;
+    margin: 0 auto;
 
 }
 
-.fisca--div-text p{
+.fisca--div-content p{
 
     margin-bottom: 0;
+    max-width: 700px;
+    margin: 0 auto;
 
 }
 
@@ -100,16 +123,11 @@ body {
 
     text-align: center;
     max-width: 700px;
-    margin-bottom: 30px !important;
+    margin: 0 auto;
+    margin-top: 30px !important;
 
 }
 
-.fisca--div-img img{
-
-    height: 350px;
-    width: 550px;
-
-}
 
 .fisca--div-flex{
 
@@ -128,6 +146,14 @@ body {
     height: 300px;
     border-radius: 10px;
 
+}
+
+.display-block{
+    display: block;
+}
+
+.display-none{
+    display: none;
 }
 
 .fisca--div-flex div{

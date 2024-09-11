@@ -26,6 +26,16 @@
                 <a class="nav-link" href="index.html">Inicio</a> 
                 <a class="nav-link" href="programas.html">Programas</a> 
                 <a class="nav-link" href="fiscalización">Fiscalización</a>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Higiene Urbana
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Zona este</a></li>
+                        <li><a class="dropdown-item" href="#">Zona oeste</a></li>
+                        <li><a class="dropdown-item" href="#">Zonas especiales</a></li>
+                    </ul>
+                </div>
                 <a class="nav-link" href="equipo.html">Equipo</a>
                 <a class="nav-link" href="digesto.html">Digesto</a>
             </div>
@@ -34,37 +44,51 @@
     </nav>
     <main>
         <div id="fisca">
-            <div>
+            <div class="fisca--div-title">
                 <h1>Proceso de fiscalización:</h1>
             </div>
-            <div class="fisca--div-text">
+            <div class="fisca--div-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero officia iste voluptatum unde suscipit aliquam tempore neque tempora. Recusandae, ullam odio! Ratione nihil provident ea alias. Quasi ex vitae quia.</p>
+                <div class="fisca--div-img">
+                    <img src="imagenes/Diagrama sin título.drawio.png" alt="">
+                </div>
             </div>
-            <div class="fisca--div-img">
-                <img src="imagenes/Dirección Higiene Urbana (3).png" alt="">
-            </div>
-            <div>
+            <div class="fisca--div-title">
                 <h1>Notificaciones y labrado de actas:</h1>
             </div>
-            <div class="fisca--div-text">
+            <div class="fisca--div-content">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quas eius dolorum similique, accusamus fugiat asperiores ea. Quidem, neque aspernatur dolore quam illum hic facilis ipsam, commodi saepe excepturi sequi?</p>
             </div>
-            <div>
+            <div class="fisca--div-title">
                 <h1>Labor de los inspectores:</h1>
             </div>
-            <div class="fisca--div-text">
+            <div class="fisca--div-content">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam facere obcaecati voluptatum modi, quod quo quasi ratione tempora id odit vitae omnis illo, delectus deserunt, quas accusantium at quidem rem.</p>
                 <div class="fisca--div-flex">
                     <div>
                         <ul>
-                            <li>Ignacio</li>
-                            <li>Marcos</li>
-                            <li>Carlos</li>
+                            <li onclick="changeMap('ignacio')">Ignacio</li>
+                            <li onclick="changeMap('marcos')">Marcos</li>
+                            <li onclick="changeMap('carlos')">Carlos</li>
                         </ul>
                     </div>
-                    <div>
+                    <div id="ignacio" class="fisca--div-flex-img display-block">
+                        <img src="imagenes/Foto1.jpeg" alt="">
+                    </div>
+                    <div id="marcos" class="fisca--div-flex-img display-none">
+                        <img src="imagenes/Dirección Higiene Urbana (3).png" alt="">
+                    </div>
+                    <div id="carlos" class="fisca--div-flex-img display-none">
                         <img src="imagenes/Foto1.jpeg" alt="">
                     </div>    
+                </div>
+            </div>
+            <div>
+                <div class="fisca--div-title">
+                    <h1>Santa Elena:</h1>
+                </div>
+                <div class="fisca--div-content">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, quasi earum in praesentium ipsa maiores impedit, odio assumenda pariatur officiis voluptatibus id ullam saepe tempora commodi quas cumque. Sed, a.</p>
                 </div>
             </div>
         </div>
@@ -89,6 +113,7 @@
             <a class="text-white" href="https://mdbootstrap.com/">Geronimo Amuchastegui</a>
         </div>
     </footer>
+    <script src="fisca.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
