@@ -109,3 +109,69 @@ document.addEventListener('DOMContentLoaded', ()=>{
 // Log to console
 console.log(message);
 console.log(clickCounter);
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const programaSelect = document.getElementById('programa');
+    const actividadSelect = document.getElementById('actividad');
+    const obraSelect = document.getElementById('obra');
+
+    // Cargar programas
+    Object.keys(data.programas).forEach(programa => {
+        const option = document.createElement('option');
+        option.value = programa;
+        option.textContent = programa;
+        programaSelect.appendChild(option);
+    });
+
+    // Manejar cambios en el programa
+    programaSelect.addEventListener('change', function () {
+        const selectedPrograma = this.value;
+        actividadSelect.innerHTML = '<option value="">Selecciona una actividad</option>';
+        obraSelect.innerHTML = '<option value="">Selecciona una obra</option>';
+
+        if (selectedPrograma) {
+            const actividades = data.programas[selectedPrograma].actividades;
+            Object.keys(actividades).forEach(actividad => {
+                const option = document.createElement('option');
+                option.value = actividad;
+                option.textContent = actividad;
+                actividadSelect.appendChild(option);
+            });
+        }
+    });
+
+    // Manejar cambios en la actividad
+    actividadSelect.addEventListener('change', function () {
+        const selectedPrograma = programaSelect.value;
+        const selectedActividad = this.value;
+        obraSelect.innerHTML = '<option value="">Selecciona una obra</option>';
+
+        if (selectedPrograma && selectedActividad) {
+            const obras = data.programas[selectedPrograma].actividades[selectedActividad];
+            obras.forEach(obra => {
+                const option = document.createElement('option');
+                option.value = obra;
+                option.textContent = obra;
+                obraSelect.appendChild(option);
+            });
+        }
+    });
+});
+
+const data = {
+    programas: {
+        "Programa 1": {
+            actividades: {
+                "Actividad 1": ["Obra 1A", "Obra 1B"],
+                "Actividad 2": ["Obra 2A", "Obra 2B"]
+            }
+        },
+        "Programa 2": {
+            actividades: {
+                "Actividad 3": ["Obra 3A", "Obra 3B"],
+                "Actividad 4": ["Obra 4A", "Obra 4B"]
+            }
+        }
+    }
+};
