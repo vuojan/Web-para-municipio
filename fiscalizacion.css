@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: montserrat;
+    font-family: roboto;
     background-color: white;
     color: black;
 }
@@ -93,7 +93,7 @@ body {
 
 .fisca--div-title{
 
-    width: 700px;
+    max-width: 55%;
     margin: 0 auto;
 
 }
@@ -106,15 +106,7 @@ body {
     line-height: 30px;
     border-radius: 10px;
     margin-bottom: 30px !important;
-    width: 900px;
-    margin: 0 auto;
-
-}
-
-.fisca--div-content p{
-
-    margin-bottom: 0;
-    max-width: 700px;
+    max-width: 70%;
     margin: 0 auto;
 
 }
@@ -122,9 +114,31 @@ body {
 .fisca--div-img{
 
     text-align: center;
-    max-width: 700px;
     margin: 0 auto;
     margin-top: 30px !important;
+
+}
+
+.fisca--div-img2{
+
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px !important;
+
+}
+
+.fisca--div-img2 p{
+
+    text-align: left;
+
+}
+
+.fisca--div-img2 img{
+
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px !important;
+    width: 600px;
 
 }
 
@@ -140,12 +154,46 @@ body {
 
 }
 
-.fisca--div-flex img{
+.fisca--div-flex-img img{
 
     width: 300px;
     height: 300px;
     border-radius: 10px;
 
+}
+
+.fisca--div-flex-list{
+
+    width: auto;
+
+}
+
+.fisca--div-flex-list p{
+
+    max-width: 250px ;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.fisca--div-flex-list ul{
+
+    padding-left: 0;
+    list-style: none;
+    display: inline-block;
+    
+}
+
+.fisca--div-flex-list ul li{
+
+    text-align: center;
+}
+
+.fisca--div-flex-list ul li:hover{
+
+    cursor: pointer;
+    text-decoration: underline;
+    
 }
 
 .display-block{
@@ -159,6 +207,32 @@ body {
 .fisca--div-flex div{
 
    margin: 0 !important
+
+}
+
+.fisca--div-flex-2{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: top;
+    margin-top: 30px !important;
+    gap: 30px;
+    
+
+}
+
+.fisca--div-flex-2 img{
+
+    max-width: 400px;
+    border-radius: 10px
+
+}
+
+.fisca--div-flex-2 p{
+
+    max-width: 400px;
+    margin: 0 !important;
 
 }
 
